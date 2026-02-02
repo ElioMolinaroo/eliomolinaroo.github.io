@@ -1,0 +1,52 @@
+base_url = "https://eliomolinaroo.github.io"
+title = "Elio Molinaro | Programmer & Rigging TD"
+theme = "tanuki"
+
+default_language = "en"
+compile_sass = true
+build_search_index = true
+generate_feeds = true
+feed_filenames = ["rss.xml"]
+
+taxonomies = [
+    { name = "tags", feed = true },
+]
+
+[markdown]
+render_emoji = true
+github_alerts = true
+
+[extra]
+mode = "blog"
+show_theme_toggle = true
+show_about_section = true
+
+[extra.hero]
+title = "Welcome to my blog!"
+subtitle = "Collection of my silly and sometimes serious experiments at the intersection of arts & technology :)"
+
+[extra.author]
+name = "Elio Molinaro"
+bio = "testing"
+avatar = "images/headshot.jpg"
+
+[extra.about]
+summary = "I'm a Rigging TD and programmer in the CG industry. I'm passionate about designing rigging systems that are fast and intuitive, both for rigging artists and animators."
+
+[extra.social]
+github = "https://github.com/ElioMolinaroo"
+linkedin = "https://linkedin.com/in/eliomolinaro"
+
+
+# Navigation tabs
+[[extra.nav]]
+name = "Blog"
+url = "/blog/"
+
+[[extra.nav]]
+name = "Projects"
+url = "/projects/"
+
+[[extra.nav]]
+name = "About"
+url = "/about/"
