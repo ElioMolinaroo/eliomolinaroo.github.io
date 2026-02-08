@@ -16,6 +16,11 @@ taxonomies = [
 render_emoji = true
 github_alerts = true
 
+[markdown.highlighting]
+error_on_missing_language = true
+light_theme = "catppuccin-latte"
+dark_theme = "catppuccin-macchiato"
+
 [extra]
 mode = "blog"
 show_theme_toggle = true
