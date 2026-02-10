@@ -25,6 +25,8 @@ dark_theme = "catppuccin-macchiato"
 mode = "blog"
 show_theme_toggle = true
 show_about_section = true
+katex_enable = true
+katex_auto_render = true
 
 [extra.hero]
 title = "Welcome to my blog!"
