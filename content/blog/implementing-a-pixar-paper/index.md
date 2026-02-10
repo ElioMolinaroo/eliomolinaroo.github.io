@@ -3,7 +3,7 @@ title = "Implementing a Pixar paper"
 description = "My experience understanding and implementing a Pixar paper."
 date = 2026-02-08
 [taxonomies]
-tags = ["maya", "programming", "autorig"]
+tags = ["maya", "programming", "maths", "python"]
 +++
 
 
@@ -11,7 +11,7 @@ tags = ["maya", "programming", "autorig"]
 A few weeks ago, I stumbled upon a paper by Pixar's research team entitled [Sculpt Processing for Character Rigging](https://graphics.pixar.com/library/SculptXfer/paper.pdf).
 I was intrigued by its content, especially the Sculpt Transfer tool that I will detail further down. 
 I was left with some time on my hands, and I thought it would be a fun experiment to try to implement it myself.
-After successfully implementing all three tools, I thought I could try to explain the logic behind it, without going too deep in the math formulas.
+After successfully implementing all three tools, I thought I could try to explain the logic behind it, without going too deep in the maths formulas.
 
 
 
@@ -49,14 +49,11 @@ You query vectors basically representing a face's edges, and this dictates the l
 
 #### At a mid-level
 For this, we need two pieces of data per face:
-- A deformation matrix representing the rotation, scaling, and shearing of the face from source rest to source pose.
-- A rotation matrix that gets us from the space of the source rest face to the space of the target rest face.
+- A deformation matrix ***D*** representing the rotation, scaling, and shearing of the face from source rest to source pose.
+- A rotation matrix ***R*** that gets us from the space of the source rest face to the space of the target rest face.
 
 We can then compute our final matrix that will get us from target rest to target pose rest edges.
-```python
-final_mtx = rotation_mtx @ deformation_mtx @ rotation_mtx.inverse()
-```
-*i'm figuring out how to render LaTex, for now i just wrote it as Python.*
+$$ \mathbf{M}_{\text{final}} = \mathbf{R}  \cdot  \mathbf{D}  \cdot   \mathbf{R}^{-1} $$
 
 #### At a low-level
 The data is basically three sets of edge vectors for each face: for the source rest mesh, the source pose mesh, and the target rest mesh.
@@ -125,10 +122,10 @@ Here is a simplified demo showing what "rest-aware" means:
 
 
 ## Conclusion
-When I started this project, I wanted to prove to myself that I could understand harder math than I'm used to and implement more abstract concepts.
+When I started this project, I wanted to prove to myself that I could understand harder maths than I'm used to and implement more abstract concepts.
 
 I'm usually quite technical, even for a rigging artist, but my day to day mostly consists of dealing with 4x4 matrices and vectors.
-This project made me want to keep on learning more and more advanced math and overall scientific concepts.
+This project made me want to keep on learning more and more advanced maths and overall scientific concepts.
 
 I used to think that tools like the Sculpt Transfer weren't possible without machine learning but, in a shocking turn of events, I was dead wrong.
 
