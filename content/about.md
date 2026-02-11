@@ -15,6 +15,7 @@ I author rigs and write code to automate them on a daily basis, I also love solv
 
 ## Get in Touch
 
+- **Codeberg**: [@ElioMolinaro](https://codeberg.org/ElioMolinaro)
 - **GitHub**: [@ElioMolinaroo](https://github.com/ElioMolinaroo)
 - **Linkedin**: [Elio Molinaro](https://linkedin.com/in/eliomolinaro)
 - **Demoreels**: [Pipeline/TD](https://vimeo.com/1099127513) | [Body/Facial Rigging](https://vimeo.com/1092909522/22dfacc900)

@@ -41,6 +41,7 @@ avatar = "images/headshot.jpg"
 summary = "I'm a Rigging TD and programmer in the CG industry. I'm passionate about designing rigging systems that are fast and intuitive, both for rigging artists and animators."
 
 [extra.social]
+codeberg = "https://codeberg.org/ElioMolinaro"
 github = "https://github.com/ElioMolinaroo"
 linkedin = "https://linkedin.com/in/eliomolinaro"
 
